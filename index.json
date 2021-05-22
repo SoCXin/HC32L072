@@ -1,0 +1,88 @@
+{
+    "name":"HC32L072",
+    "type":"MCU",
+    "Freq":"48MHz",
+    "vendor":"hdsc",
+    "Core":"Cortex-M0",
+    "description":"hdsc Cortex-M0 MCU",
+    "homepage":"http://www.SoC.xin/HC32L072",
+    "keywords": [
+        "motor",
+        "hdsc",
+        "Cortex-M0",
+        "8-bit"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/HC32L072.git"
+    },
+    "version":"1.0.0",
+    "series":["HC32L072J6TB","HC32L072F6TB","HC32M140J8TA"],
+    "package":["LQFP32","LQFP48","TQFP48"],
+    "HC32L072J6TB": {
+        "package":"LQFP48",
+        "RAM":4,
+        "ROM":32,
+        "peripheral": ["ADC","IIC","UART","SPI","LDO","PWM"]
+    },
+    "HC32L072F6TB": {
+        "package":"LQFP32",
+        "SRAM":4,
+        "Flash":32
+    },
+    "HC32M140J8TA": {
+        "package":"TQFP48",
+        "SRAM":8,
+        "Flash":64
+    },
+    "USART0": {
+        "LIN": 1,
+        "more":["BUAD","LIN","IrDA"]
+    },
+    "USART1": {
+        "LIN": 1,
+        "more":["BUAD","LIN","IrDA"]
+    },
+    "USART2": {
+        "LIN": 1,
+        "more":["BUAD","LIN","IrDA"]
+    },
+    "ADC": {
+        "num": 1,
+        "channel": 8,
+        "resolution": 12,
+        "rate": 2400
+    },
+    "IIC": {
+        "num": 1,
+        "channel": 8,
+        "resolution": 12,
+        "rate": 2400
+    },
+    "DMA": {
+        "num": 2,
+        "rate": 2400
+    },
+    "CMP": {
+        "num": 2,
+        "rate": 2400
+    },
+    "OPA": {
+        "num": 2,
+        "rate": 2400
+    },
+    "TIM": {
+        "resolution":[16,16,16],
+        "rate": 1024
+    },
+    "PWR": {
+        "VDD": [2700,5500],
+        "Ivdd": 3.5,
+        "rate": 1024
+    },
+    "PWM": {
+        "num": 2,
+        "resolution": 8,
+        "rate": 256
+    }
+}
