@@ -10,7 +10,7 @@ output
 flashloader
 mpu_*
 *launch
-*sc*
+# *sc*
 *cm23*
 *cm3*
 *cm7*
